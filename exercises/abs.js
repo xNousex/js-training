@@ -12,7 +12,11 @@
 // Your code :
 
 function abs(num) {
-    return num > 0 ? num : num * -1;
+    if (num >=0) {
+        return num
+    } else {
+        return num*-1
+    }
 }
 
 //* Begin of tests
