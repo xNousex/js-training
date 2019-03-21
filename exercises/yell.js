@@ -7,8 +7,13 @@
  */
 
 
+ function yell(a_string) 
+ {
+    return a_string.toUpperCase();
+ }
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(yell('Hello World!'),"HELLO WORLD!")
+
 // End of tests */

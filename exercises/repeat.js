@@ -9,6 +9,22 @@
  */
 
 //* Begin of tests
+
+
+function repeat(a_string, n_repeat) 
+{
+    if (a_string.length === 0) {
+        return '';   
+    } 
+    let resultString='';
+    for (let i=0; i<n_repeat; i++){
+        resultString += a_string;
+    }
+
+    return resultString
+}
+
+
 const assert = require('assert')
 
 assert.strictEqual(typeof repeat, 'function')

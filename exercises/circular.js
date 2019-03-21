@@ -8,6 +8,9 @@
  */
 
 // Your code :
+var circular = new Object();
+var propertyName = 'circular';
+circular[propertyName] = circular;
 
 //* Begin of tests
 const assert = require('assert')

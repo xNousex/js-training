@@ -7,6 +7,20 @@
  */
 
 
+ function sentence(words)
+ {
+    let sentenceResult =''
+    if (words.length <= 0) {
+        return sentenceResult;
+    }
+    for(var word in words)
+    {
+        sentenceResult += words[word] + ' ';
+    }
+   
+    return sentenceResult.trim();
+ }
+
 //* Begin of tests
 const assert = require('assert')
 

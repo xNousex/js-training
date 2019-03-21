@@ -6,7 +6,10 @@
  *
  */
 
-
+function words(a_string) 
+{
+    return a_string.split(' ');
+}
 //* Begin of tests
 const assert = require('assert')
 

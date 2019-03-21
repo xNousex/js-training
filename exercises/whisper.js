@@ -8,8 +8,15 @@
  */
 
 
+ function whisper(a_string) {
+    a_string = a_string.toLowerCase();
+ 
+    return a_string.replace('*', '\n').trim();
+ }
+
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(whisper('Hello World!'), 'hello world!')
+assert.strictEqual(whisper('Hello*World!'), 'hello\nworld!')
 
-assert.fail('You must write your own tests')
 // End of tests */

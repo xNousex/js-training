@@ -9,7 +9,25 @@
  */
 
 // Your code :
-
+function multiply(a,b) {
+    let result=a;
+    let endfor=b;
+    if (a === 0 || b == 0) {
+        return 0;
+    } else  {        
+        if (b<0) {
+            endfor = -endfor
+        }
+        for(var i = 0; i < endfor-1; i++){
+            result += (a)
+          }
+        if ((b<0 && a<0) || b<0) {
+            result = -result
+        }
+        
+        return result
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

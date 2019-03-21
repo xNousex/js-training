@@ -7,6 +7,14 @@
  */
 
 
+ function total (numbers) 
+ {
+     let totalNumbers=0;
+     for (var number in numbers) {
+        totalNumbers +=numbers[number];
+     }
+     return totalNumbers;
+ }
 //* Begin of tests
 const assert = require('assert')
 
